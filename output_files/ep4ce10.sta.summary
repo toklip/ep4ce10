@@ -2,112 +2,88 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_40m'
-Slack : 21.862
+Type  : Slow 1200mV 85C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7809.710
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'clk_160k'
-Slack : 6245.055
+Type  : Slow 1200mV 85C Model Setup 'clk_500hz'
+Slack : 1999990.719
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'clk_800hz'
-Slack : 1249990.738
+Type  : Slow 1200mV 85C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.465
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_800hz'
-Slack : 0.509
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk_160k'
-Slack : 0.743
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk_40m'
-Slack : 0.744
+Type  : Slow 1200mV 85C Model Hold 'clk_500hz'
+Slack : 0.498
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_40m'
-Slack : 12.245
+Slack : 12.358
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_160k'
-Slack : 3124.776
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3905.970
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_800hz'
-Slack : 624999.793
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_500hz'
+Slack : 999999.787
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'clk_40m'
-Slack : 22.070
+Type  : Slow 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7809.979
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'clk_160k'
-Slack : 6245.238
+Type  : Slow 1200mV 0C Model Setup 'clk_500hz'
+Slack : 1999991.604
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'clk_800hz'
-Slack : 1249991.623
+Type  : Slow 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.416
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'clk_800hz'
-Slack : 0.471
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'clk_160k'
-Slack : 0.691
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'clk_40m'
-Slack : 0.694
+Type  : Slow 1200mV 0C Model Hold 'clk_500hz'
+Slack : 0.462
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_40m'
-Slack : 12.253
+Slack : 12.355
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_160k'
-Slack : 3124.766
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3905.968
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_800hz'
-Slack : 624999.776
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_500hz'
+Slack : 999999.773
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'clk_40m'
-Slack : 23.706
+Type  : Fast 1200mV 0C Model Setup 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7811.287
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'clk_160k'
-Slack : 6247.846
+Type  : Fast 1200mV 0C Model Setup 'clk_500hz'
+Slack : 1999994.798
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'clk_800hz'
-Slack : 1249994.804
+Type  : Fast 1200mV 0C Model Hold 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.193
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'clk_800hz'
-Slack : 0.205
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'clk_160k'
-Slack : 0.296
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'clk_40m'
-Slack : 0.298
+Type  : Fast 1200mV 0C Model Hold 'clk_500hz'
+Slack : 0.200
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_40m'
-Slack : 11.763
+Slack : 11.923
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_160k'
-Slack : 3124.765
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3906.049
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_800hz'
-Slack : 624999.764
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_500hz'
+Slack : 999999.768
 TNS   : 0.000
 
 ------------------------------------------------------------

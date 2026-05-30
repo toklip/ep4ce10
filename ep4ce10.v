@@ -3,32 +3,27 @@ module ep4ce10(
   output [3:0] led
 );
 
-reg [7:0] r160k;
-wire clk_160k= r160k[7];
-always @( posedge clk_40m)
-  if( r160k < 8'd249)
-    r160k <= r160k+8'b1;
+wire clk_128k;
+reg [7:0] r500hz;
+wire clk_500hz= r500hz[7];
+always @( posedge clk_128k)
+  r500hz <= r500hz+8'b1;
+reg [6:0] r4hz;
+wire ce_4hz= (r4hz == 8'd124);
+always @( posedge clk_500hz)
+  if( r4hz < 7'd124)
+    r4hz <= r4hz+7'b1;
   else
-    r160k <= 8'b0;
-reg [7:0] r800hz;
-wire clk_800hz= r800hz[7];
-always @( posedge clk_160k)
-  if( r800hz < 8'd199)
-    r800hz <= r800hz+8'b1;
-  else
-    r800hz <= 8'b0;
-reg [7:0] r4hz;
-wire ce_4hz= (r4hz == 8'd199);
-always @( posedge clk_800hz)
-  if( r4hz < 8'd199)
-    r4hz <= r4hz+8'b1;
-  else
-    r4hz <= 8'b0;
+    r4hz <= 7'b0;
 reg [3:0] led_ring;
 initial
   led_ring <= 4'b1110;
-always @( posedge clk_800hz)
+always @( posedge clk_500hz)
   if( ce_4hz)
     led_ring <= {led_ring[2:0],led_ring[3]};
 assign led= led_ring;
+pll pll_inst(
+  .inclk0( clk_40m),
+  .c0( clk_128k)
+);
 endmodule

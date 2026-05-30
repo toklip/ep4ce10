@@ -1,8 +1,11 @@
 create_clock -period 25 [get_ports clk_40m]
 
-create_generated_clock -name clk_160k -source [get_ports clk_40m] -divide_by 250 [get_registers {r160k[7]}]
-create_generated_clock -name clk_800hz -source [get_registers {r160k[7]}] -divide_by 200 [get_registers {r800hz[7]}]
+derive_pll_clocks
 
-set_output_delay -clock [get_clocks clk_800hz] 0.5 [get_ports led*]
+set pll_128k [get_clocks {pll_inst*clk[0]}]
+set clk_128k [get_clock_info -name $pll_128k]
+create_generated_clock -name clk_500hz -source $clk_128k -divide_by 256 [get_registers {r500hz[7]}]
+
+set_output_delay -clock [get_clocks clk_500hz] 0.5 [get_ports led*]
 
 derive_clock_uncertainty
